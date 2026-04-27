@@ -1,0 +1,12 @@
+[build]
+  command = "npm install"
+  publish = "public"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"   # necesario porque el repo usa ES modules (import/export)
+
+[[redirects]]
+  from = "/api/pin"
+  to = "/.netlify/functions/pin"
+  status = 200
