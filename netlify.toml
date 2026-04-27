@@ -4,7 +4,7 @@
 
 [functions]
   directory = "netlify/functions"
-  node_bundler = "esbuild"   # necesario porque el repo usa ES modules (import/export)
+  node_bundler = "esbuild"
 
 [[redirects]]
   from = "/api/pin"
